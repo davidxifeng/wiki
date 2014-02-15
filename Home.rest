@@ -1,3 +1,7 @@
 试一试就在github上面写点笔记~
+=========================
+
+markdown
+--------
 
 github上markdown应用最广,这里还可以使用rst,但是评论里就只能用markdown了,我是不是应该再学习一下markdown呢?
