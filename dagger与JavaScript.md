@@ -1,4 +1,4 @@
-1. 对象的 `__defineGetter__` 方法来定义getter, 不过这个api已经废弃.
+### 对象的 `__defineGetter__` 方法来定义getter, 不过这个api已经废弃.
 
 ```javascript
 // 推荐用法:
@@ -15,13 +15,13 @@ Object.defineProperty(o, 'gimmeFive', {
 ```
 建议我们项目新代码使用标准写法~
 
-2. 构造函数 与 this new
+### 构造函数 与 this new
 
 js: 如果没有没有使用new就调用了带有this的构造函数,那么构造函数就蜕变为一个
 普通函数,this表示全局对象. 不过使用use strict; 可以避免这种情况
 (原理是js不允许对undefined对象的添加属性)
 
-3. instanceof
+### instanceof
 
 ```js
 [1, 2, 3] instanceof Array // true
@@ -35,7 +35,7 @@ var v = new Vehicle();
 v instanceof Vehicle // true
 ```
 
-4. this in js
+### this in js
 
 this是当前函数的运行环境. js支持环境的动态切换
 
@@ -44,3 +44,47 @@ this的运行环境也是一个对象,如果函数在全局环境中运行,就�
 
 (初学js,对此理解不深,更没有深入研究过,不过我感觉应该是类似与Lua的 `setfenv`)
 
+### prototype bind call apply
+
+prototype用法:
+
+```js
+var O = function(p) {
+    this.p = p;
+};
+
+O.prototype.m = function() {
+    console.log(this.p)
+    return this.p;
+};
+
+var o1 = new O("Hello World!");
+o1.m() // "Hello World!"
+
+var o2 = new O("Hello o2");
+o2.m() // "Hello o2"
+```
+
+http://javascript.ruanyifeng.com/oop/basic.html
+
+call apply bind 与this
+
+```js
+function f(x,y){ console.log(x+y); }
+f.call(null,1,1) // 2
+f.apply(null,[1,1]) // 2
+
+// apply 的 奇技淫巧
+var a = [1,2,3];
+Math.max.apply(null, a) // 3
+
+// call bind 和prototype结合起来的奇技淫巧...
+[1,2,3].slice(0,1) // [1]
+
+Array.prototype.slice.call([1,2,3], 0, 1) // [1]
+
+// call方法实质上是调用Function.prototype.call
+var slice = Function.prototype.call.bind(Array.prototype.slice);
+slice([1, 2, 3], 0, 1) // [1]
+
+```
