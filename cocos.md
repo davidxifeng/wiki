@@ -1,3 +1,6 @@
+### 贝塞儿曲线
+起点 控制点1 控制点2 终点
+
 ### Cocosbuilder的节点的js controlled 与custom class
 今天遇到了一个bug,解决这个bug的过程中大致了解了 editor-support/cocosbuilder/NodeLoaderLibrary 加载node的这一块的内容.
  
