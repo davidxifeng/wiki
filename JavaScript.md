@@ -1,10 +1,8 @@
-### 对象的 `__defineGetter__` 方法来定义getter, 不过这个api已经废弃.
+### getter与setter
 
 ```javascript
-// 推荐用法:
 // Using the get operator
 var o = { get gimmeFive() { return 5; } };
-
 // Using Object.defineProperty
 var o = {};
 Object.defineProperty(o, 'gimmeFive', {
@@ -13,7 +11,7 @@ Object.defineProperty(o, 'gimmeFive', {
   }
 });
 ```
-建议我们项目新代码使用标准写法~
+附已经废弃的: `__defineGetter__`
 
 ### 构造函数 与 this new
 
@@ -64,8 +62,6 @@ o1.m() // "Hello World!"
 var o2 = new O("Hello o2");
 o2.m() // "Hello o2"
 ```
-
-http://javascript.ruanyifeng.com/oop/basic.html
 
 call apply bind 与this
 
