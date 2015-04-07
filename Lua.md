@@ -6,3 +6,4 @@
 * 两个local函数需要互相调用,应该怎么定义?
 * Lua中local什么意思?为什么要采用这样的设计,而不是变量默认为local? 如果设计为local变量不加关键词的话,应该怎样设计?
 * 用过哪些Lua IDE, 其调试功能如何实现?
+* require函数如何工作的? package.path cpath preload loaders loaded
