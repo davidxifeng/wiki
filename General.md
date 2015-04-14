@@ -3,7 +3,7 @@
 如以下代码
 
 ```lua
-function Panel:showPanel_(isModal, isCentered, closeWhenTouchModel, useShowAnimation)
+function Panel:showPanel(isModal, isCentered, closeWhenTouchModel, useShowAnimation)
 end
 -- usage:
 self:showPanel(true, true, true, true)
