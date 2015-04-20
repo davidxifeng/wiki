@@ -1,3 +1,10 @@
+## Lua 5.1 的 llex处理UTF-8 BOM的问题
+简单地说,就是5.1版本不支持处理带有BOM (byte order mark)的UTF-8文件. 实测发现5.2和luajit可以正确解析.
+
+如有需要可以修改5.1的源码支持此功能,或者简单的去掉BOM.
+
+## Lua知识点
+
 * # 操作符. 5.1中 #{1,nil, 3} 输出3, #{1,nil,3,nil} 输出1. 5.2中table的len只有是sequence时有意义,但我测试发现行为还是和5.1中的一样
 * Lua: f(return_a_b(), c)调用中, return_a_b只返回a一个值, f(c, return_a_b())会返回c, a, b
 * 如何格式化出001, 002, ..., 021 这样的字符串?
