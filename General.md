@@ -1,3 +1,25 @@
+# 概念 理解 领悟 编程之道 设计之禅
+
+## hook
+
+### 英文单词hook是什么意思?
+
+(鱼钩,钩子,用钩连接,sale hook 卖点, hook up 与某人碰头, ...)
+
+### 在软件领域通常它都是用来指代什么的,举一些你熟悉的例子来说明.
+
+如:
+
+* windows编程 hook api
+* Lua C api debug library debug hook
+* git hooks script<pre-commit, post-update>,
+* Vim的事件: 进入buf [判断扩展名,加载相关语言的插件,设置高亮语法...], 保存buf...)
+* ...
+
+### 谈谈感想,谈谈对架构设计的理解
+
+(自由发挥环节)
+
 # 优雅的风格
 
 ## 使用 表查找 代替 一组 if-elseif
