@@ -29,3 +29,9 @@ find | xargs perl -i -p -e 's/X/Y/g' i: in-place p: 循环处理多行]
 ```sh
 otool -V -j -t a.out
 ```
+
+
+# 日常操作
+
+* Windows系统可以装一个shell右键菜单扩展来快速在当前目录打开命令行
+* 是否遇到过中英文标点符号的麻烦? 现代输入法都有选项可以设置中文状态下使用英文标点的
