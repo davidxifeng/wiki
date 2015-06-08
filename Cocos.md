@@ -19,7 +19,7 @@ quick在~/.profile设置环境变量,然后在工程文件中通过环境变量�
 
 ### Cocosbuilder的节点的js controlled 与custom class
 今天遇到了一个bug,解决这个bug的过程中大致了解了 editor-support/cocosbuilder/NodeLoaderLibrary 加载node的这一块的内容.
- 
+
 ### LabelBMFont 位图字体
 
 ```
