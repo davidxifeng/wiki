@@ -7,13 +7,20 @@
 
 * # 操作符. 5.1中 #{1,nil, 3} 输出3, #{1,nil,3,nil} 输出1. 5.2中table的len只有是sequence时有意义,但我测试发现行为还是和5.1中的一样
 * Lua: f(return_a_b(), c)调用中, return_a_b只返回a一个值, f(c, return_a_b())会返回c, a, b
-* 如何格式化出001, 002, ..., 021 这样的字符串?
+* 如何格式化出001, 002, ..., 021 这样的字符串? `string.format('%03d', [1 .. 999])`
 * Lua中如何遍历逗号分隔的内容, 如 'a,b,c,,d,e,f,g'. 包括空白和不包括空白的.
-* 知道`for _, v in ipairs(t)` 这样的用法吗? `_`写法通常有什么含义?
+* 知道`for _, v in ipairs(t)` 这样的用法吗? `_`写法通常有什么常用的约定?
 * 两个local函数需要互相调用,应该怎么定义?
 * Lua中local什么意思?为什么要采用这样的设计,而不是变量默认为local? 如果设计为local变量不加关键词的话,应该怎样设计?
-* 用过哪些Lua IDE, 其调试功能如何实现?
+* 用过哪些Lua IDE,有哪些功能? 其调试功能如何实现? (ZeroBraneStudio, decode, BabeLua, LDT,
+  ...)(自动补全，语法高亮，代码格式化，……)(debug api)
+* LuaDoc， LDoc，文档生成工具
 * require函数如何工作的? package.path cpath preload loaders loaded
+* Lua require 'test.a' 和 'test/a' 搜索的路径虽然可以相同，
+  但在package.loaded表中却是两个不同的项，以两个参数分别调用require，
+  会使相应的Lua源文件加载2次，可能会有期待外的效果发生。
+  所以： 1. 模块中要根据情况避免副作用， 2. 一个项目中约定使用一种路径分隔符
+
 * 在一个可以执行Lua的环境中,(假设没有沙箱),如何使用Lua代码取得当前Lua虚拟机的
 版本号? (`_VERSION`, 和高阶一点的string.dump(function()end)判断)? [进一步], 如何
 判断当前Lua虚拟机的特性如int字长,`size_t`字长?如何判断Lua的number底层是整型还是
@@ -21,4 +28,4 @@
 * Lua的沙箱环境如何实现?
 * `g = g or {}` 有什么特性? [代码可以重入, 多次执行的话变量不会被多次初始化;
   也可以不用考虑多个模块的初始化顺序]
-
+* `tostring`对number（默认的double实现）的输出格式。luaconf.h中的`"%.14g"`,"%e%f"
