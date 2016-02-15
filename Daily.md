@@ -1,6 +1,15 @@
 
 # 命令行 tips
 
+* 使用gcc的预处理器处理其他文本：
+
+```sh
+gcc -P -E -x c a.lua
+```
+-P选项禁止linemarkers， -x c 让编译器把输入的文件按照C文件来处理
+如有必要可以加上-C来保留C注释
+
+
 * 查找空目录 find . -type d -empty
 
 * 输出指定范围内的行到stdout:
