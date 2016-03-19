@@ -24,20 +24,22 @@ gcc -P -E -x c a.lua
 ```sh
 find | xargs perl -i -p -e 's/X/Y/g' i: in-place p: 循环处理多行]
 ```
-* 如何批量旋转+裁剪一组图片? 如果还要再在某个位置加上一个数字呢?
+* 如何批量旋转+裁剪一组图片? 如果还要再在某个位置加上一个数字呢? convert (imagemagick)
 
-使用 convert (imagemagick)
+* git update-index --assume-unchanged file/name.txt
 
-* git update-index --assume-unchanged file/name.txt 这条命令可以让git忽略添加到仓库中,已经改动但暂时不需要提交的文件
-
-# 神兵谱
+# 系统工具
 
 * valgrind工具: 内存检测 性能分析
 * pprof 性能分析工具
-* otool 查看opcode, 反汇编结果:
+* [OS X]otool 查看opcode, 反汇编结果:
 ```sh
 otool -V -j -t a.out
 ```
+* [Linux] gcc -g[0,1,2,3] 附加上调试信息，objdump -S 可以显示出源码和汇编指令
+
+* [Linux] 环境变量LD_LIBRARY_PATH 可以设置运行时的so搜索路径
+* [Linux] ldd exe 查看文件依赖的so库
 
 
 # 日常操作
