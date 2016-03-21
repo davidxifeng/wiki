@@ -4,6 +4,8 @@
 
 ## Lua知识点
 
+* 5.3开始，pairs和ipairs才会触发index/newindex元方法，使用的api是lua_geti/seti,
+之前的版本使用的是rawseti/rawgeti
 * # 操作符. 5.1中 #{1,nil, 3} 输出3, #{1,nil,3,nil} 输出1. 5.2中table的len只有是sequence时有意义,但我测试发现行为还是和5.1中的一样
 * Lua: f(return_a_b(), c)调用中, return_a_b只返回a一个值, f(c, return_a_b())会返回c, a, b
 * 如何格式化出001, 002, ..., 021 这样的字符串? `string.format('%03d', [1 .. 999])`
