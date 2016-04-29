@@ -1,6 +1,28 @@
-## 问题
+## Lua源码
 
-* GETTABLE和多个IF，不知道哪个更快。
+* luaV lvm.c 虚拟机
+
+* luaE state
+
+* luaF function
+* luaH table hash
+* luaS string
+
+* luaO lobject
+
+* luaD ldo.c 函数调用及返回
+
+* luaT ltm.c 元表
+
+* luaC lgc.c 垃圾回收 标记清理
+
+* luaM lmem.c 内存管理
+* luaZ lzio.c 流IO
+
+* luaX llex.c 词法解析
+* luaY lparser.c 语法分析
+
+* luaU ldump lundump 字节码的序列化 最简单的部分
 
 ## Lua知识点
 
@@ -19,10 +41,14 @@
   ...)(自动补全，语法高亮，代码格式化，……)(debug api)
 * LuaDoc， LDoc，文档生成工具
 * require函数如何工作的? package.path cpath preload loaders loaded
+* 实现一个loader，可以对Lua文件进行预处理
 * Lua require 'test.a' 和 'test/a' 搜索的路径虽然可以相同，
   但在package.loaded表中却是两个不同的项，以两个参数分别调用require，
   会使相应的Lua源文件加载2次，可能会有期待外的效果发生。
   所以： 1. 模块中要根据情况避免副作用， 2. 一个项目中约定使用一种路径分隔符
+
+* 按要求实现一个加强版的load() (inject run; debug api收集local和upvalue，然后
+按照模板编译代码，run update)
 
 * 在一个可以执行Lua的环境中,(假设没有沙箱),如何使用Lua代码取得当前Lua虚拟机的
 版本号? (`_VERSION`, 和高阶一点的string.dump(function()end)判断)? [进一步], 如何
@@ -32,4 +58,4 @@
 * `g = g or {}` 有什么特性? [代码可以重入, 多次执行的话变量不会被多次初始化;
   也可以不用考虑多个模块的初始化顺序]
 * 5.1 `tostring`对number（默认的double实现）的输出格式。luaconf.h中的`"%.14g"`,"%e%f"
-* Lua 5.1 的 llex处理UTF-8 BOM: 5.1不支持处理有BOM的UTF-8文件, 需要修改5.1或去掉BOM.
+* 5.1 不支持处理有BOM的UTF-8文件, 需要修改5.1或去掉BOM.
