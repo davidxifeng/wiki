@@ -21,6 +21,7 @@
 
 * luaX llex.c 词法解析
 * luaY lparser.c 语法分析
+* luaK lcode.c 指令生成
 
 * luaU ldump lundump 字节码的序列化 最简单的部分
 
