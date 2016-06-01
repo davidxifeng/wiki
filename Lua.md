@@ -1,3 +1,23 @@
+## Lua C API
+
+### stack
+
+``` c
+int lua_absindex (lua_State *L, int idx);
+void lua_copy (lua_State *L, int fromidx, int toidx);
+int lua_gettop (lua_State *L);
+void lua_insert (lua_State *L, int index);
+void lua_pop (lua_State *L, int n);
+void lua_remove (lua_State *L, int index);
+void lua_replace (lua_State *L, int index);
+void lua_rotate (lua_State *L, int idx, int n);
+void lua_settop (lua_State *L, int index);
+
+void lua_xmove (lua_State *from, lua_State *to, int n);
+
+```
+
+
 ## Lua源码
 
 * luaV lvm.c 虚拟机
