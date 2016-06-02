@@ -20,16 +20,19 @@
 
 editors written in Lua:
 
-## howl [howl]
+## [howl]
 
 luajit & moonscript
+
 ui: gtk
-editing engine: Scintilla, then with Aullar[Aullar] after 0.4
+
+editing engine: [Aullar] after 0.4
 
 
-## Textadept [Textadept]
+## [Textadept]
 
 ui: gtk+2, ncurses
+
 editing engine: Scintilla
 
 [howl]: http://howl.io/
