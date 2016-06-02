@@ -18,3 +18,20 @@
 * spacemacs
 * yo
 
+editors written in Lua:
+
+## howl [howl]
+
+luajit & moonscript
+ui: gtk
+editing engine: Scintilla, then with Aullar[Aullar] after 0.4
+
+
+## Textadept [Textadept]
+
+ui: gtk+2, ncurses
+editing engine: Scintilla
+
+[howl]: http://howl.io/
+[Textadept]: http://foicica.com/textadept/
+[Aullar]http://howl.io/blog/2016/05/26/introducing-aullar.html
