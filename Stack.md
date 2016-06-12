@@ -18,6 +18,8 @@
 * spacemacs
 * yo
 
+vim like editor: vis https://github.com/martanne/vis
+
 editors written in Lua:
 
 ## [howl]
