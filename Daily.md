@@ -1,4 +1,49 @@
 
+# protobuf wire type
+
+
+<table>
+  <thead>
+    <tr>
+      <th>type</th>
+      <th>meaning</th>
+      <th>used for</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Varint</td>
+      <td>int32, int64, uint32, uint64, sint32, sint64, bool, enum</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>64-bit</td>
+      <td>fixed64, sfixed64, double</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Length-delimi</td>
+      <td>string, bytes, embedded messages, packed repeated fields</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Start group</td>
+      <td>Groups (deprecated)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>End group</td>
+      <td>Groups (deprecated)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>32-bit</td>
+      <td>fixed32, sfixed32, float</td>
+    </tr>
+  </tbody>
+</table>
+
 # 命令行 tips
 
 * 使用gcc的预处理器处理其他文本：
