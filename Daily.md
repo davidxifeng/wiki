@@ -46,6 +46,8 @@
 
 # 命令行 tips
 
+* 查找broken的软链接 `find . -xtype l`
+
 * 使用gcc的预处理器处理其他文本：
 
 ```sh
@@ -86,8 +88,3 @@ otool -V -j -t a.out
 * [Linux] 环境变量LD_LIBRARY_PATH 可以设置运行时的so搜索路径
 * [Linux] ldd exe 查看文件依赖的so库
 
-
-# 日常操作
-
-* Windows系统可以装一个shell右键菜单扩展来快速在当前目录打开命令行
-* 是否遇到过中英文标点符号的麻烦? 现代输入法都有选项可以设置中文状态下使用英文标点的
