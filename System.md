@@ -1,4 +1,24 @@
 
+
+# boot与os
+
+## grub2
+
+### 安装
+
+grub2-install /dev/sda
+
+安装到硬盘mbr，并假定镜像放在/boot目录下，如果是在livecd中，需要注意chroot。
+
+grub2-install 实际上是shell script，调用grub-mkimage和grub-setup来完成任务。
+
+### 启动操作系统
+
+两种不同的启动方式：
+
+* 直接加载操作系统
+* 链接到另外一个boot loader来加载操作系统 (有些os grub没有原生支持)
+
 # 虚拟化方案对比
 
 * 虚拟化，直接执行（vmware virtualbox xen）
