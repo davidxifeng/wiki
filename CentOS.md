@@ -31,10 +31,14 @@ svn: subversion
 > ./configure --prefix=`echo ~/local` --enable-local-library-preloading --with-serf=`echo ~/local`
 
 
-## epel源添加方法
+## 添加源
 
-su -c 'rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm'
+epel:
 
+> su -c 'rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm'
+
+ius, inline with upstream:
+> su -c 'rpm -Uvh https://centos7.iuscommunity.org/ius-release.rpm'
 
 ## CentOS package
 
@@ -43,6 +47,9 @@ epel源:
 ag: `the_silver_searcher`
 7z&7za: p7zip p7zip-plugins
 ntfs-3g: ntfs-3g ntfs-3g-devel ntfsprogs
+
+安装ius源的新版git:
+> sudo yum install git2u
 
 protobuf-compiler
 
