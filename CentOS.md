@@ -20,9 +20,16 @@ nasm
 flatc
 cloc
 
-svn: subversion 官方仓库中的svn版本太旧,与win版协同工作需要自己编译新版
-./configure --prefix=`echo ~/local` --enable-local-library-preloading
-需要配置加载local lib;也可以使用--enable-all-static静态链接,编译成单个的可执行文件.
+svn: subversion
+
+* 下载安装apache serf http库
+
+> scons PREFIX=`echo ~/local`; scons install
+
+* 动态库并设置本地路径
+
+> ./configure --prefix=`echo ~/local` --enable-local-library-preloading --with-serf=`echo ~/local`
+
 
 ## epel源添加方法
 
@@ -37,8 +44,10 @@ ag: `the_silver_searcher`
 7z&7za: p7zip p7zip-plugins
 ntfs-3g: ntfs-3g ntfs-3g-devel ntfsprogs
 
-cmake
 protobuf-compiler
+
+cmake
+scons
 
 glew
 
@@ -64,6 +73,8 @@ bzip2-devel
 gtk3-devel
 ruby-devel
 fuse-devel
+openssl-devel -> pcre-devel
+
 
 系统管理工具
 
