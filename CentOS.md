@@ -20,6 +20,10 @@ nasm
 flatc
 cloc
 
+svn: subversion 官方仓库中的svn版本太旧,与win版协同工作需要自己编译新版
+./configure --prefix=`echo ~/local` --enable-local-library-preloading
+需要配置加载local lib;也可以使用--enable-all-static静态链接,编译成单个的可执行文件.
+
 ## epel源添加方法
 
 su -c 'rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm'
