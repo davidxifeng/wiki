@@ -1,2 +1,2 @@
 deploy:
-	git push wiki master:master
+	git push pub master:master
