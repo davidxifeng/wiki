@@ -63,6 +63,7 @@ tmux
 zsh
 iotop
 htop
+tree
 
 qemu-kvm
 qemu
