@@ -48,6 +48,8 @@ ag: `the_silver_searcher`
 7z&7za: p7zip p7zip-plugins
 ntfs-3g: ntfs-3g ntfs-3g-devel ntfsprogs
 
+rlwrap: readline wrap
+
 安装ius源的新版git:
 > sudo yum install git2u
 
@@ -85,5 +87,8 @@ openssl-devel -> pcre-devel
 
 
 系统管理工具
+
+NetworkManager-pptp
+NetworkManager-pptp-gnome
 
 acpica-tools
