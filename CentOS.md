@@ -1,3 +1,31 @@
+## 开发环境
+
+### Haskell on Centos 7
+
+Haskell Platform方案
+
+1. wget -c https://haskell.org/platform/download/8.0.1/haskell-platform-8.0.1-unknown-posix--minimal-x86_64.tar.gz
+2. tar -xvf
+3. sudo ./install-haskell-platform.sh
+4. sudo ln -s /usr/lib64/libgmp.so.10 /usr/lib64/libgmp.so
+
+ghci报了找不到gmp,手动创建软链接解决了.
+
+安装log
+
+```
+Unpacking ./hp-usr-local.tar.gz to /...
+Running /usr/local/haskell/ghc-8.0.1-x86_64/bin/activate-hs ...
+
+Haskell set to:
+    GHC         /usr/local/haskell/ghc-8.0.1-x86_64
+    Haddocks    file:///usr/local/haskell/ghc-8.0.1-x86_64/doc/frames.html
+    Other doc   file:///usr/local/haskell/ghc-8.0.1-x86_64/share/doc/ghc/html/index.html
+
+Symlinks for command line tools (ghc, cabal, etc..) added to:
+    /usr/local/bin
+```
+
 
 ## 软件
 
