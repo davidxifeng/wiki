@@ -1,4 +1,8 @@
 
+* /service-src/service_gate.c: legacy gate
+  /service/gate.lua: new gate, see 1e9a27232ba43da10d3a1e1d59e5ee14b052e2d5
+  skynet remove c service_client.c in 47167ea2e84ae701fdf6032b856b92811d33ac33
+
 
 
 * snlua的启动流程之所以设计成两步完成，是因为服务初始化可能会耗时，
