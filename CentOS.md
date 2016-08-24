@@ -1,6 +1,13 @@
 ## 开发环境
 
-### Haskell on Centos 7
+### Python
+
+* yum install python-setuptools python-pip
+* sudo pip install --upgrade pip
+* sudo pip install Pygments
+
+
+### Haskell
 
 Haskell Platform方案
 
