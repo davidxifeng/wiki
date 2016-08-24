@@ -1,4 +1,12 @@
 
+## 重温skynet
+
+* 单进程内skynet 服务数量的理论上线是32位的handle值的低24位, 高8位保留给了最多可
+255个skynet集群节点. 2 ^ 24 = 16777216;
+
+* 单个消息的size的上限是32位的size去掉 8位的 通道信息,也就是 16MB
+
+
 * /service-src/service_gate.c: legacy gate
   /service/gate.lua: new gate, see 1e9a27232ba43da10d3a1e1d59e5ee14b052e2d5
   skynet remove c service_client.c in 47167ea2e84ae701fdf6032b856b92811d33ac33
