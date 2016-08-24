@@ -6,6 +6,10 @@
 
 * 单个消息的size的上限是32位的size去掉 8位的 通道信息,也就是 16MB
 
+* skynet消息调度从无锁的CAS到 自旋锁 spin lock的变动:
+  http://blog.codingnow.com/2014/12/skynet_spinlock.html
+  http://www.cnblogs.com/fingerpass/p/message-queue.html
+
 
 * /service-src/service_gate.c: legacy gate
   /service/gate.lua: new gate, see 1e9a27232ba43da10d3a1e1d59e5ee14b052e2d5
