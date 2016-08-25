@@ -127,3 +127,17 @@ NetworkManager-pptp
 NetworkManager-pptp-gnome
 
 acpica-tools
+
+# 系统设置
+
+## 改键
+
+x环境改键
+
+改键这块有bug. gnome tweak tool无法成功修改.
+右alt改右ctrl我查了很久资料才搞定.怀疑有些文档没有更新
+
+> setxkbmap -option # 清除已有项
+> setxkbmap -option caps:swapescape # swap caps esc
+> setxkbmap -option ctrl:ralt_rctrl # right alt -> right ctrl
+
