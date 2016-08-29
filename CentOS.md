@@ -102,6 +102,8 @@ iotop
 htop
 tree
 
+ranger: install via local git repo
+
 qemu-kvm
 qemu
 
@@ -127,6 +129,9 @@ NetworkManager-pptp
 NetworkManager-pptp-gnome
 
 acpica-tools
+
+yum install dos2unix:
+dos2unix mac2unix unix2dos unix2mac
 
 # 系统设置
 
