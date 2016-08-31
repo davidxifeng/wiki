@@ -1,5 +1,9 @@
 
-## 重温skynet
+## skynet
+
+* socketdriver.send的参数可以可以是指针,Lua string表或string.
+需要注意的是,传给skynet_socket_send的buffer的内存,会由socket_server模块在使用完后
+释放.所以如果参数不是指针时,lsend会分配内存,copy buffer.
 
 * 单进程内skynet 服务数量的理论上线是32位的handle值的低24位, 高8位保留给了最多可
 255个skynet集群节点. 2 ^ 24 = 16777216;
