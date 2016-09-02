@@ -39,6 +39,7 @@ Symlinks for command line tools (ghc, cabal, etc..) added to:
 vmware player
 chrome
 atom
+meld 其实已经很好用了 yum install meld
 
 ## build
 
