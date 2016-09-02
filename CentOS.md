@@ -56,7 +56,27 @@ nasm
 flatc
 cloc
 
-svn: subversion
+### vim编译
+
+依赖:
+
+* **libXt-devel**
+* libXpm-devel
+* gtk3-devel
+* lua-devel
+* python-devel
+* ruby-devel
+
+> ./configure --prefix=`echo ~/local` \
+>   --with-features=huge \
+>   --enable-luainterp=yes \
+>   --enable-pythoninterp=yes \
+>   --enable-rubyinterp=yes \
+>   --enable-cscope \
+>   --with-x=yes \
+>   --enable-gui=gtk3
+
+### subversion
 
 * 下载安装apache serf http库
 
@@ -96,13 +116,14 @@ scons
 
 glew
 
-
+unar: open source unrar
 tmux
 zsh
 iotop
 htop
 tree
 
+caca-utils
 ranger: install via local git repo
 
 qemu-kvm
@@ -111,15 +132,16 @@ qemu
 kernel-doc
 gl-manpages
 mesa-demos
+xorg-x11-docs
+gtk3-devel-docs
+
+sqlite-devel
 
 readline-devel
-lua-devel
 mesa-libGLU-devel
 newt-devel
 glew-devel
 bzip2-devel
-gtk3-devel
-ruby-devel
 fuse-devel
 openssl-devel -> pcre-devel
 
@@ -128,6 +150,8 @@ openssl-devel -> pcre-devel
 
 NetworkManager-pptp
 NetworkManager-pptp-gnome
+
+nmap nmap-frontend
 
 acpica-tools
 
