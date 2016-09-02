@@ -1,15 +1,15 @@
-## 开发环境
+## 语言开发环境
 
 ### Python
 
 * yum install python-setuptools python-pip
 * sudo pip install --upgrade pip
-* sudo pip install Pygments
+* sudo pip install pygments
 
 
 ### Haskell
 
-Haskell Platform方案
+haskell platform方案
 
 1. wget -c https://haskell.org/platform/download/8.0.1/haskell-platform-8.0.1-unknown-posix--minimal-x86_64.tar.gz
 2. tar -xvf
@@ -21,27 +21,26 @@ ghci报了找不到gmp,手动创建软链接解决了.
 安装log
 
 ```
-Unpacking ./hp-usr-local.tar.gz to /...
-Running /usr/local/haskell/ghc-8.0.1-x86_64/bin/activate-hs ...
+unpacking ./hp-usr-local.tar.gz to /...
+running /usr/local/haskell/ghc-8.0.1-x86_64/bin/activate-hs ...
 
-Haskell set to:
-    GHC         /usr/local/haskell/ghc-8.0.1-x86_64
-    Haddocks    file:///usr/local/haskell/ghc-8.0.1-x86_64/doc/frames.html
-    Other doc   file:///usr/local/haskell/ghc-8.0.1-x86_64/share/doc/ghc/html/index.html
+haskell set to:
+    ghc         /usr/local/haskell/ghc-8.0.1-x86_64
+    haddocks    file:///usr/local/haskell/ghc-8.0.1-x86_64/doc/frames.html
+    other doc   file:///usr/local/haskell/ghc-8.0.1-x86_64/share/doc/ghc/html/index.html
 
-Symlinks for command line tools (ghc, cabal, etc..) added to:
+symlinks for command line tools (ghc, cabal, etc..) added to:
     /usr/local/bin
 ```
 
 
-## 软件
+## 安装包风格的软件
 
 vmware player
 chrome
 atom
-meld 其实已经很好用了 yum install meld
 
-## build
+## 自己构建的软件
 
 适合安装在~/local或软链接到~/bin
 
@@ -55,10 +54,13 @@ fasm
 nasm
 flatc
 cloc
+ranger: install via local git repo
 
-### vim编译
+### vim 编译
 
-依赖:
+huge version with gtk3 gui
+
+(部分)依赖:
 
 * **libXt-devel**
 * libXpm-devel
@@ -87,7 +89,54 @@ cloc
 > ./configure --prefix=`echo ~/local` --enable-local-library-preloading --with-serf=`echo ~/local`
 
 
-## 添加源
+## CentOS package
+
+### 常用软件
+
+* meld
+* protobuf-compiler
+* cmake
+* scons
+* glew
+* unar: open source unrar
+* tmux
+* zsh
+* iotop
+* htop
+* tree
+* caca-utils
+* qemu-kvm
+* qemu
+* NetworkManager-pptp
+* NetworkManager-pptp-gnome
+* nmap nmap-frontend
+* dos2unix: dos2unix mac2unix unix2dos unix2mac
+* ag: `the_silver_searcher`
+* 7z&7za: p7zip p7zip-plugins
+* ntfs-3g: ntfs-3g ntfs-3g-devel ntfsprogs
+* rlwrap: readline wrap
+* git2u (ius源)
+
+### 开发
+
+* kernel-doc
+* gl-manpages
+* mesa-demos
+* xorg-x11-docs
+* gtk3-devel-docs
+* libXfont-devel
+* sqlite-devel
+* readline-devel
+* mesa-libGLU-devel
+* newt-devel
+* glew-devel
+* bzip2-devel
+* fuse-devel
+* openssl-devel
+* pcre-devel
+
+
+### 添加源
 
 epel:
 
@@ -96,71 +145,9 @@ epel:
 ius, inline with upstream:
 > su -c 'rpm -Uvh https://centos7.iuscommunity.org/ius-release.rpm'
 
-## CentOS package
+## 系统设置
 
-epel源:
-
-ag: `the_silver_searcher`
-7z&7za: p7zip p7zip-plugins
-ntfs-3g: ntfs-3g ntfs-3g-devel ntfsprogs
-
-rlwrap: readline wrap
-
-安装ius源的新版git:
-> sudo yum install git2u
-
-protobuf-compiler
-
-cmake
-scons
-
-glew
-
-unar: open source unrar
-tmux
-zsh
-iotop
-htop
-tree
-
-caca-utils
-ranger: install via local git repo
-
-qemu-kvm
-qemu
-
-kernel-doc
-gl-manpages
-mesa-demos
-xorg-x11-docs
-gtk3-devel-docs
-
-sqlite-devel
-
-readline-devel
-mesa-libGLU-devel
-newt-devel
-glew-devel
-bzip2-devel
-fuse-devel
-openssl-devel -> pcre-devel
-
-
-系统管理工具
-
-NetworkManager-pptp
-NetworkManager-pptp-gnome
-
-nmap nmap-frontend
-
-acpica-tools
-
-yum install dos2unix:
-dos2unix mac2unix unix2dos unix2mac
-
-# 系统设置
-
-## 改键
+### 改键
 
 x环境改键
 
