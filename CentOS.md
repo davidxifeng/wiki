@@ -138,6 +138,7 @@ huge version with gtk3 gui
   deps for `lgi`: dynamic Lua binding to GObject libraries using
   GObject-introspection
 * libffi-devel
+* wxGTK3 wxGTK3-devel wxGTK3-docs wxGTK3-gl wxGTK3-media
 
 
 ### 添加源
