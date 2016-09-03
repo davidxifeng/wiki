@@ -116,6 +116,7 @@ huge version with gtk3 gui
 * ntfs-3g: ntfs-3g ntfs-3g-devel ntfsprogs
 * rlwrap: readline wrap
 * git2u (ius源)
+* mariadb: mariadb mariadb-devel mariadb-server
 
 ### 开发
 
@@ -139,6 +140,8 @@ huge version with gtk3 gui
   GObject-introspection
 * libffi-devel
 * wxGTK3 wxGTK3-devel wxGTK3-docs wxGTK3-gl wxGTK3-media
+* boost-devel
+* protobuf-devel
 
 
 ### 添加源
