@@ -134,6 +134,10 @@ huge version with gtk3 gui
 * fuse-devel
 * openssl-devel
 * pcre-devel
+* gobject-introspection-devel
+  deps for `lgi`: dynamic Lua binding to GObject libraries using
+  GObject-introspection
+* libffi-devel
 
 
 ### 添加源
