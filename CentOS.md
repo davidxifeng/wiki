@@ -35,7 +35,7 @@ symlinks for command line tools (ghc, cabal, etc..) added to:
 
 ### Erlang
 
-yum install erlang
+yum install erlang erlang-doc elixir
 
 会安装很多依赖: tcl tk wxGTK (gtk2) wxGTK-gl graphviz ...
 
