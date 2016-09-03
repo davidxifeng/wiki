@@ -33,6 +33,11 @@ symlinks for command line tools (ghc, cabal, etc..) added to:
     /usr/local/bin
 ```
 
+### Erlang
+
+yum install erlang
+
+会安装很多依赖: tcl tk wxGTK (gtk2) wxGTK-gl graphviz ...
 
 ## 安装包风格的软件
 
