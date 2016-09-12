@@ -123,6 +123,11 @@ huge version with gtk3 gui
 * git2u (ius源)
 * mariadb: mariadb mariadb-devel mariadb-server
 
+## CentOS/Linux
+
+debuginfo-install 可以单独安装调试符号.
+而且gdb在使用的时候会自动提示所需要的调试符号的包名
+
 ### 开发
 
 * kernel-doc
