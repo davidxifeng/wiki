@@ -1,4 +1,15 @@
 
+## 库
+
+* lua posix
+* lua-term
+* ansicolors 通过tag like api给控制台输出加上颜色,小巧实用的一个库
+* lua-lpeg
+* lua-socket
+* lua-json
+* lua-md5
+* lua-sec OpenSSL绑定库
+
 ## tips
 
 ### 位运算
