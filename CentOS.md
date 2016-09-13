@@ -96,6 +96,16 @@ huge version with gtk3 gui
 
 ## CentOS package
 
+### qt开发环境
+
+qt5-qtbase-devel qt5-qtdoc qt5-qtbase-doc qt5-assistant qt5-designer
+
+编译redis desktop manager的时候,安装qt开发环境遇到了一点意外.
+
+从官网下载的qt安装程序,总是出错,下载到一半的时候网络异常但它不会重新下载;
+取消安装的话又会删除保存在/tmp下的7z包,全部重新下载.
+
+
 ### 常用软件
 
 * meld
