@@ -15,6 +15,17 @@
 alt-getopt bit32 dkjson elfs ldoc lpeg lua-term luafilesystem luaposix
 luarocks luasec luasocket markdown moonscript penlight
 
+luajit版:
+
+```sh
+./configure --prefix=`echo ~/opt/luarocks-luajit` \
+  --with-lua-bin=`echo ~/bin` \
+  --lua-suffix=jit \
+  --with-lua-include=`echo ~/david/LuaJIT/src` \
+  --with-lua-lib=`echo ~/david/LuaJIT/src`
+```
+
+luarocks-jit install lapis
 
 ## 库
 
