@@ -1,4 +1,21 @@
 
+## 自定义Luarocks 安装
+
+1. 编译Lua
+2. clone luarocks源码, 配置
+```sh
+  ./configure --prefix=`echo ~/opt/luarocks` \
+    --with-lua-bin=`echo ~/david/lua/src/` \
+    --with-lua-include=`echo ~/david/lua/src` \
+    --with-lua-lib=`echo ~/david/lua/src`
+```
+3. update path env
+4. enjoy what luarocks bring for you!
+
+alt-getopt bit32 dkjson elfs ldoc lpeg lua-term luafilesystem luaposix
+luarocks luasec luasocket markdown moonscript penlight
+
+
 ## 库
 
 * lua posix
