@@ -6,6 +6,11 @@
 
 ## skynet
 
+* skynet.wait(co)
+  参数中的co完全可以省略,因为其只有是coroutine.running()的时候才有意义.
+  云风之所以加上这个参数,是因为在一些场景此值需要提前获取, 获取后直接传进来,
+  在wait()内部不用再调用api了,算是一个小优化...
+
 * socketdriver.send的参数可以可以是指针,Lua string表或string.
   需要注意的是,传给skynet_socket_send的buffer的内存,会由socket_server模块在使用完后
   释放.所以如果参数不是指针时,lsend会分配内存,copy buffer.
