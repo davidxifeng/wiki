@@ -2,6 +2,10 @@
 all:
 	$(MAKE) deploy -j 2
 
-deploy:
+deploy: a b
+
+a:
 	git push pub master:master
+
+b:
 	git push
