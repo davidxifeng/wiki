@@ -2,10 +2,12 @@
 ## TODO
 
 * 实现一个好用的Lua枚举方案
+
 ## 自定义Luarocks 安装
 
 1. 编译Lua
 2. clone luarocks源码, 配置
+
 ```sh
   ./configure --prefix=`echo ~/opt/luarocks` \
     --with-lua-bin=`echo ~/david/lua/src/` \
@@ -29,6 +31,7 @@ luajit版:
 ```
 
 luarocks-jit install lapis
+
 
 ## 库
 
@@ -60,15 +63,18 @@ luarocks-jit install lapis
 ### stack
 
 ``` c
-int lua_absindex (lua_State *L, int idx);
+int  lua_absindex (lua_State *L, int idx);
 void lua_copy (lua_State *L, int fromidx, int toidx);
-int lua_gettop (lua_State *L);
+int  lua_gettop (lua_State *L);
 void lua_insert (lua_State *L, int index);
 void lua_pop (lua_State *L, int n);
+void lua_pushvalue (lua_State *L, int index);
 void lua_remove (lua_State *L, int index);
 void lua_replace (lua_State *L, int index);
 void lua_rotate (lua_State *L, int idx, int n);
 void lua_settop (lua_State *L, int index);
+
+lua_push*
 
 void lua_xmove (lua_State *from, lua_State *to, int n);
 
