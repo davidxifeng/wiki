@@ -1,3 +1,16 @@
+
+## CLion
+
+Fri 23:29 Oct 21 Lua插件的inspection 有一个bug: 
+
+```lua
+  if method == 'number' then
+    tiles = f() -- 会提示这个tiles的赋值是unused,很明显分析错了
+  elseif method == 'function' then
+    tiles = g()
+  end
+```
+
 ## Xcode 漫游
 
 Xcode工程的默认中间文件的根目录在这里:
