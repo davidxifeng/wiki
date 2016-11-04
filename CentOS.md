@@ -186,3 +186,11 @@ x环境改键
 > setxkbmap -option caps:swapescape # swap caps esc
 > setxkbmap -option ctrl:ralt_rctrl # right alt -> right ctrl
 
+
+## tips
+
+删除不需要的旧版内核
+```zsh
+sudo yum install yum-utils
+sudo package-cleanup --oldkernels --count=2
+```
