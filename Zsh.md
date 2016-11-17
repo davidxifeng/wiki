@@ -1,6 +1,14 @@
 # zsh点滴
 
 
+查找broken的软链接:
+
+```zsh
+find path -xtype l
+```
+see `man find`
+
+
 [参考][Reference]
 
 ```zsh
