@@ -1,6 +1,8 @@
 ## basic
 
 * build
+  vpath build:
+  在源码外运行configure script,即可以实现out of source build
 * initdb -D psql-data : create a group of db files
 * postgres -D psql-data : run server
 * psql -p PORT -d postgres
