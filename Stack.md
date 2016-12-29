@@ -62,6 +62,19 @@
 * pure http://purecss.io/
 * kube https://imperavi.com/kube/
 
+# GUI
+
+* wxWidgets: Python
+* wxLua: ZeroBraneStudio zbs版在持续更新中, 官方版停留在5.2和wx 2系列
+  https://github.com/pkulchenko/wxlua
+* imgui
+* nuklear: clean imgui in C
+* GTK
+
+* Win32 Cocoa
+
+* thoughts: Lua *imgui* + wxWidgets/Web for my editor
+
 # Editors
 
 * vim
