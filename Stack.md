@@ -67,6 +67,8 @@
 * wxWidgets: Python
 * wxLua: ZeroBraneStudio zbs版在持续更新中, 官方版停留在5.2和wx 2系列
   https://github.com/pkulchenko/wxlua
+* qtlua: QT: more than a cross platform gui library, 应用框架,包括网络,svg等API
+  还支持移动平台
 * imgui
 * nuklear: clean imgui in C
 * GTK
