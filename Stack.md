@@ -46,16 +46,16 @@
 
 # Languages
 
-* C
 * Lua
+* C
+* Haskell
 * JavaScript/HTML/CSS
 * JavaScript/Node
-* Haskell
-* ClojureScript (atom/proton)
 * C++ (libraries)
 * Java (Android)
 * Swift/Objective-C (iOS/MacOSX)
 * Scheme
+* ClojureScript (atom/proton)
 
 # web
 
@@ -75,7 +75,7 @@
 
 * Win32 Cocoa
 
-* thoughts: Lua *imgui* + wxWidgets/Web for my editor
+* thoughts: Lua **imgui**/wxWidgets/Web for my editor
 
 # Editors
 
@@ -83,6 +83,7 @@
 * atom
 * spacemacs
 * yo
+* online notes, private & open source cloud notes: git, encryption, web, iOS,vim
 * vis https://github.com/martanne/vis
 * [howl]
 * [Textadept]
@@ -104,3 +105,18 @@ editing engine: Scintilla
 [howl]: http://howl.io/
 [Textadept]: http://foicica.com/textadept/
 [Aullar]: http://howl.io/blog/2016/05/26/introducing-aullar.html
+
+# libraries: build useful software for people
+
+## 压缩库
+
+* lzma算法，关键指标上比zlib rar好
+* Snappy： 谷歌2011年开源的压缩算法，设计目标是更快的速度和reasonable 压缩率
+
+  各种语言的绑定很完善
+
+  感觉很适合用在网络通讯中
+
+* zlib：cocos项目中经常用，我的`ltk`已经收录Lua绑定
+
+
