@@ -2,10 +2,10 @@
 
 ```javascript
 // Using the get operator
-var o = { get gimmeFive() { return 5; } };
+var o = { get givemeFive() { return 5; } };
 // Using Object.defineProperty
 var o = {};
-Object.defineProperty(o, 'gimmeFive', {
+Object.defineProperty(o, 'givemeFive', {
   get: function() {
     return 5;
   }
@@ -40,7 +40,7 @@ this是当前函数的运行环境. js支持环境的动态切换
 this的运行环境也是一个对象,如果函数在全局环境中运行,就是指全局变量;如果作为对象
 的方法运行,this指那个对象.
 
-(初学js,对此理解不深,更没有深入研究过,不过我感觉应该是类似与Lua的 `setfenv`)
+(初学js,对此理解不深,更没有深入研究过,不过我感觉应该是类似于Lua的 `setfenv`)
 
 ### prototype bind call apply
 

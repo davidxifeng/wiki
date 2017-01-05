@@ -6,7 +6,10 @@
 
 ## TODO
 
-* 实现一个好用的Lua枚举方案
+* [x] 实现一个好用的Lua枚举方案
+
+  [2017-01-05 云风大哥实现的typecheck库中已包含了我想
+  要的这个功能，而且还有结构体等更多]
 
 ## 自定义Luarocks 安装
 
@@ -117,7 +120,8 @@ void lua_xmove (lua_State *from, lua_State *to, int n);
 
 * 5.3开始，pairs和ipairs才会触发index/newindex元方法，使用的api是lua_geti/seti,
 之前的版本使用的是rawseti/rawgeti
-* # 操作符. 5.1中 #{1,nil, 3} 输出3, #{1,nil,3,nil} 输出1. 5.2中table的len只有是sequence时有意义,但我测试发现行为还是和5.1中的一样
+* # 操作符. 5.1中 #{1,nil, 3} 输出3, #{1,nil,3,nil} 输出1.
+  5.2中table的len只有是sequence时有意义,但我测试发现行为还是和5.1中的一样
 * Lua: f(return_a_b(), c)调用中, return_a_b只返回a一个值, f(c, return_a_b())会返回c, a, b
 * 如何格式化出001, 002, ..., 021 这样的字符串? `string.format('%03d', [1 .. 999])`
 * Lua中如何遍历逗号分隔的内容, 如 'a,b,c,,d,e,f,g'. 包括空白和不包括空白的.
@@ -126,8 +130,9 @@ void lua_xmove (lua_State *from, lua_State *to, int n);
 * 两个local函数需要互相调用,应该怎么定义?
 * Lua中local什么意思?为什么要采用这样的设计,而不是变量默认为local?
   如果设计为local变量不加关键词的话,应该怎样设计?（参考moonscript，添加export，保留local）
-* 用过哪些Lua IDE,有哪些功能? 其调试功能如何实现? (ZeroBraneStudio, decode, BabeLua, LDT,
-  ...)(自动补全，语法高亮，代码格式化，……)(debug api)
+* 用过哪些Lua IDE,有哪些功能? 其调试功能如何实现?
+  (ZeroBraneStudio, decode, BabeLua, LDT, ...)
+  (自动补全，语法高亮，代码格式化，……)(debug api)
 * LuaDoc， LDoc，文档生成工具
 * require函数如何工作的? package.path cpath preload loaders loaded
 * 实现一个loader，可以对Lua文件进行预处理

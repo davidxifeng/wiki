@@ -1,6 +1,18 @@
 # 编译器之clang/llvm
 
-clang有一个神奇的选项：
+
+## compile link load
+
+centos 6上，使用`gcc a.cpp`会报错，因为没有指定连接stdc++动态库；
+加上-lstdc++之后，`ldd a.out`会显示出目标动态链接了libstdc++.so.6 libgcc_s.so等文件
+
+使用`clang a.cpp`可以直接编译，`ldd a.out`显示只链接了linux-vdso.so.1 libc.so.6等文件；
+猜想clang的c++库是静态链接的。
+
+可执行文件中的符号需要导出后才可以给加载的so使用，使用gcc/clang选项：`-Wl,-E`,
+skynet中就是这样使用的。
+
+## clang有一个神奇的选项：
 
 ``` zsh
 clang -### Print (but do not run) the commands to run for this compilation.
@@ -22,13 +34,16 @@ InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault
 
 # Lua源码学习
 
-* api的返回值，成功返回0，各种失败原因返回其他非零值（或者负值），成功的值只有一个，失败的情况有多种；调用处也可以这样写`f() || g();`。
+* api的返回值，成功返回0，各种失败原因返回其他非零值（或者负值），
+  成功的值只有一个，失败的情况有多种；调用处可以这样写`f() || g();`。
 
-* 一个函数在多个场景下有不同的用法,可以使用宏来给函数定义多个名字,在不同的场景使用不同的名字以使代码更加清晰易懂.如:
+* 一个函数在多个场景下有不同的用法,可以使用宏来给函数定义多个名字,
+  在不同的场景使用不同的名字以使代码更加清晰易懂.如:
 
-```C
-/* from stack to (same) stack */
-#define setobjs2s	setobj
-/* to stack (not from same stack) */
-#define setobj2s	setobj
-```
+  ```C
+  /* from stack to (same) stack */
+  #define setobjs2s	setobj
+  /* to stack (not from same stack) */
+  #define setobj2s	setobj
+  ```
+
