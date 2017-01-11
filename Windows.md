@@ -23,3 +23,17 @@
   关闭方法: Win+R services.msc 把windows update服务禁掉.
   (是否最佳方案待确认)
 
+
+## BAT basic
+
+* xcopy:
+  copy文件时,只有当源文件比目标文件新时才直接覆盖copy:
+
+  ```
+  xcopy /d /y src dest
+  ```
+  /d 计算时间戳; /y 直接覆盖不提示
+
+* start:
+
+  写启动脚本时,start相当于bash中的exec.某些场景下可以少创建一个console窗口
