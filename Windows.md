@@ -1,4 +1,4 @@
-# windows开发环境
+# windows环境
 
 ## 软件
 
@@ -15,6 +15,12 @@
 * LibreOffice
 
 * Chrome浏览器 并登陆帐号同步个人数据
+
+* QQ使用轻聊版或者国际版
+
+## 开发环境
+
+Visual Studio: 安装MSDN帮助文档
 
 ## 系统设置
 
