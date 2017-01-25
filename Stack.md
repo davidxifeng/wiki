@@ -44,10 +44,17 @@
 
 * ydiff
 
+# Toolkit
+
+* socat: netcat++, a relay for bidirectional data transfer between two
+  independent data channels.
+
 # Languages
 
 * Lua
 * C
+* C#
+* F#
 * Haskell
 * JavaScript/HTML/CSS
 * JavaScript/Node
@@ -56,6 +63,9 @@
 * Swift/Objective-C (iOS/MacOSX)
 * Scheme
 * ClojureScript (atom/proton)
+
+* Lily
+* Squirrel
 
 # web
 
