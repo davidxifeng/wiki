@@ -3,7 +3,7 @@
 ## 软件
 
 * visual studio社区版
-* 安装插件VsVim RelativeLineNumbers(同类插件有两个,选择这个) CodeMaid
+* 安装插件VsVim RelativeLineNumbers(同类插件有两个,选这个) CodeMaid
 * 改键软件key tweak; 改键 capslock, 右alt, esc
 * sublime text 3
 * 海龟svn
@@ -11,16 +11,24 @@
 * 7-zip
 * FileZilla
 * shadow socks
-* 微信 企业微信
 * LibreOffice
 
 * Chrome浏览器 并登陆帐号同步个人数据
 
+* 微信 企业微信
 * QQ使用轻聊版或者国际版
+
+* cmder win平台的iTerm2
+
+* IDA
 
 ## 开发环境
 
-Visual Studio: 安装MSDN帮助文档
+* Visual Studio: 安装MSDN帮助文档
+
+* 打开开发模式，安装bash。
+
+* Nodejs
 
 ## 系统设置
 
