@@ -1,6 +1,12 @@
 # zsh点滴
 
 
+重定向stderr到stdout:
+```zsh
+lua t.lua 2>&1 | less
+```
+
+
 查找broken的软链接:
 
 ```zsh
