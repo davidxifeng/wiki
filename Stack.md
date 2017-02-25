@@ -49,6 +49,14 @@
 * socat: netcat++, a relay for bidirectional data transfer between two
   independent data channels.
 
+
+## 在线工具
+
+- [流程图](http://flowchart.js.org/)
+- [时序图](https://bramp.github.io/js-sequence-diagrams/)
+- [markdown编辑器](http://dillinger.io/)
+
+
 # Languages
 
 * Lua
@@ -67,10 +75,18 @@
 * Lily
 * Squirrel
 
+## Lua
+
+- [StarLight](https://github.com/paulcuth/starlight) - A Lua to ES6 transpiler
+- [lua.js](https://github.com/tdzl2003/lua.js) - 不支持coroutine
+- [lua2js](https://github.com/basicer/lua2js) - A Lua parser and standard library targeting the Mozilla Parser API AST.
+- [lua.js](https://github.com/mherkender/lua.js) - 直接翻译Lua到js
+
 # web
 
-* pure http://purecss.io/
-* kube https://imperavi.com/kube/
+- [pure](http://purecss.io/)
+- [kube](https://imperavi.com/kube/)
+- [simple markdown](https://simplemde.com/)
 
 # GUI
 
