@@ -3,7 +3,15 @@
 ## 软件
 
 * visual studio社区版
-* 安装插件VsVim RelativeLineNumbers(同类插件有两个,选这个) CodeMaid
+* vs插件
+  VsVim
+  RelativeNumber
+  MarkdownEditor
+  Syntax Highlighting Pack
+  File Icons
+  EditorConfig Language Service
+  CodeRush for Roslyn
+  Code Maid
 * 改键软件key tweak; 改键 capslock, 右alt, esc
 * sublime text 3
 * 海龟svn
@@ -23,8 +31,6 @@
 * IDA
 
 ## 开发环境
-
-* Visual Studio: 安装MSDN帮助文档
 
 * 打开开发模式，安装bash。
 
