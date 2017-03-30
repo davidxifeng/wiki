@@ -1,5 +1,19 @@
 
-## 提议:
+## Lua & js
+
+- [StarLight](https://github.com/paulcuth/starlight) - A Lua to ES6 transpiler
+- [lua.js](https://github.com/tdzl2003/lua.js) - 不支持coroutine
+- [lua2js](https://github.com/basicer/lua2js) - A Lua parser and standard library targeting the Mozilla Parser API AST.
+- [lua.js](https://github.com/mherkender/lua.js) - 直接翻译Lua到js
+
+
+## IDE
+
+* ZeroBraneStudio
+* IDLua
+  最新版本的源码没有找到，jar中的时间是2016.12月，repo中最新的提交是2016.10月
+
+## 想法:
 
 * 给Lua加入const关键字,实现定义常量的功能
   作用: 代码在增加可读性的同时不损失效率
@@ -7,9 +21,7 @@
 ## TODO
 
 * [x] 实现一个好用的Lua枚举方案
-
-  [2017-01-05 云风大哥实现的typecheck库中已包含了我想
-  要的这个功能，而且还有结构体等更多]
+  [2017-01-05 云风实现的typecheck库中已包含了我想要的这个功能]
 
 ## 自定义Luarocks 安装
 

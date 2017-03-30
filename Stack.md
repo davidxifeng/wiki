@@ -1,47 +1,9 @@
 # projects
 
 * skynet & hive & skynet2
-
-* BigPixel 使用gloss开发的一个简单的pixel art编辑器
-
-* Kalah 一个使用ruby写的命令行的alpha beta搜索程序 of kalah
-
 * MacOSX-authbind 修改过的for os x的authbind 小工具
-
-* XVim xcode的vim插件
-
-* clojure-py
-
-* clojurescript
-
-* cocos2d-iphone cocos2d-x的前辈工程 ObjC开发
-
-* cocos2d-x
-
-* deke
-
-* ghc
-
 * iTerm-colors iTerm app的配色方案
-
-* network haskell的网络库
-
-* pbc 云风的pb解析器
-
-* pelican
-
-* perdure
-
-* shadow-vico
-
-* textmate
-
-* tig: git cui
-
-* vgrichina-vico
-
 * vim-colors-solarized 配色方案
-
 * ydiff
 
 # Toolkit
@@ -74,13 +36,6 @@
 
 * Lily
 * Squirrel
-
-## Lua
-
-- [StarLight](https://github.com/paulcuth/starlight) - A Lua to ES6 transpiler
-- [lua.js](https://github.com/tdzl2003/lua.js) - 不支持coroutine
-- [lua2js](https://github.com/basicer/lua2js) - A Lua parser and standard library targeting the Mozilla Parser API AST.
-- [lua.js](https://github.com/mherkender/lua.js) - 直接翻译Lua到js
 
 # web
 
@@ -140,10 +95,7 @@ editing engine: Scintilla
 * lzma算法，关键指标上比zlib rar好
 * Snappy： 谷歌2011年开源的压缩算法，设计目标是更快的速度和reasonable 压缩率
 
-  各种语言的绑定很完善
-
-  感觉很适合用在网络通讯中
-
+  各种语言的绑定很完善 可以用在网络通讯中
 * zlib：cocos项目中经常用，我的`ltk`已经收录Lua绑定
 
 
