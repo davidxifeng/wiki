@@ -5,6 +5,8 @@
 
 使用`ssh-add -K 私钥文件名`,可以解决这个问题。  see `man ssh-add`
 
+ps: 由于ssh-add,所以mac上使用id_rsa还是优先设置密码.
+
 ## iOS的ad hoc测试包发布方式
 
 * 可用的设备id是随着ipa一块发布的. app的跟目录下有一个xml文件embedded.mobileprovision,里面包含有ProvisionedDevices的array. 最多可以支持100个.
