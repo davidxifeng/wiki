@@ -1,3 +1,21 @@
+### Promise
+
+
+### 生成器函数
+
+```
+function* gen() {
+  yield 1;
+  yield 2;
+}
+
+var g = gen();
+g.next(); // {value:1, done: false}
+g.next(); // {value:2, done: false}
+g.next(); // {value:undefined, done: true}
+```
+
+
 ### getter与setter
 
 ```javascript
