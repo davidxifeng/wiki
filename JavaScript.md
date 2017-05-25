@@ -1,3 +1,49 @@
+### ts
+
+interface
+
+object的字段
+
+函数签名
+
+```
+interface EqFunc {
+  (a: string, b: string): boolean;
+}
+```
+
+indexable types
+
+```
+interface StringArray {
+  [index: number]: string;
+}
+```
+
+组合使用
+
+``` typescript
+interface Counter {
+    (start: number): string;
+    interval: number;
+    reset(): void;
+}
+
+function getCounter(): Counter {
+    let counter = <Counter>function (start: number) { };
+    counter.interval = 123;
+    counter.reset = function () { };
+    return counter;
+}
+
+// function object property
+
+let c = getCounter();
+c(10);
+c.reset();
+c.interval = 5.0;
+```
+
 ### Promise
 
 
