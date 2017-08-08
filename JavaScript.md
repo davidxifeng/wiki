@@ -1,4 +1,16 @@
-### ts
+### node npm
+
+http请求封装库: axios
+
+服务端http框架: koa
+
+redis client:
+
+* node-redis https://github.com/NodeRedis/node_redis
+* ioredis https://github.com/luin/ioredis
+  medis: open source redis gui client with eletron
+
+### TypeScript
 
 interface
 
