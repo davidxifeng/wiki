@@ -1,3 +1,7 @@
+## 苹果上架与IAP相关
+
+sku: 开发者自己的标识符,保证自己的应用之间唯一即可. bundle id是苹果使用的,要求所有应用间唯一
+
 
 ## ssh-add 存储ssh key到登录keychain
 
