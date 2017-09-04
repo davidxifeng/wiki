@@ -5,11 +5,11 @@ sku: 开发者自己的标识符,保证自己的应用之间唯一即可. bundle
 [官方文档](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Chapters/Products.html)是最好的...
 
 
-1. 设计产品
+### 1. 设计产品
 
   消耗品 订阅产品
 
-2. 从苹果服务器获取产品信息,显示产品UI
+### 2. 从苹果服务器获取产品信息,显示产品UI
 
   根据产品id来获取产品信息,可以从本地读取产品id,也可以从应用自己的服务器请求. 苹果并没有限制使用哪种做法, 两种方式各有优点.
 
@@ -47,7 +47,7 @@ sku: 开发者自己的标识符,保证自己的应用之间唯一即可. bundle
 
   测试: 在开发机器上使用测试账号登录, 使用开发build的app, 注意不能把开发账号用在正式的环境中,否则测试账号会无效.
 
-3. 用户选择产品,请求支付
+### 3. 用户选择产品,请求支付
 
   ```
     // 创建支付请求
@@ -59,7 +59,7 @@ sku: 开发者自己的标识符,保证自己的应用之间唯一即可. bundle
   ```
   苹果提醒如何处理欺诈支付
 
-4. 等待App Store处理交易
+### 4. 等待App Store处理交易
 
   交易队列(transaction queue)扮演重要角色, app需要在启动完成后添加观察者到默认队列 `[[SKPaymentQueue defaultQueue] addTransactionObserver:observer];`
   观察者实现`SKPaymentTransactionObserver`协议来接受通知
