@@ -1,5 +1,7 @@
 ## 苹果内购 IAP 笔记
 
+sku: 开发者自己的标识符,保证自己的应用之间唯一即可. bundle id是苹果使用的,要求所有应用间唯一
+
 [官方文档](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Chapters/Products.html)是最好的...
 
 
@@ -80,6 +82,8 @@
 服务器收据验证: 推荐的做法是先验证产品服务器, 如果收到 沙箱收据用于产品 的报错, 再去沙箱服务器验证. (去不同地址验证)
 
 苹果还提供了提交审核需要的[检查项](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Chapters/AppReview.html#//apple_ref/doc/uid/TP40008267-CH10-SW4).
+
+
 
 ## ssh-add 存储ssh key到登录keychain
 
