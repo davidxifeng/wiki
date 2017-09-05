@@ -4,6 +4,7 @@ sku: 开发者自己的标识符,保证自己的应用之间唯一即可. bundle
 
 [官方文档](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Chapters/Products.html)是最好的...
 
+![支付处理步骤](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Art/intro_2x.png)
 
 ### 1. 设计产品
 
