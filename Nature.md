@@ -8,6 +8,6 @@
 中的temps universel coordonné的缩写是TUC,最终缩写成了UTC... (by International
 Telecommunication Union (ITU) and International Astronomical Union)
 * 中国时间 东八区,UTC+8; 欧洲的主体是UTC+1, 英国,葡萄牙,冰岛等国家使用UTC
-* 参考资料[世界时区图][世界时区图]
+* `date list-timezone` nu shell中可以查看系统时区
 
-[世界时区图]: http://upload.wikimedia.org/wikipedia/commons/8/88/World_Time_Zones_Map.png
+![世界时区图](http://upload.wikimedia.org/wikipedia/commons/8/88/World_Time_Zones_Map.png)

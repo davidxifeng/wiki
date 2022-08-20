@@ -1,0 +1,13 @@
+[book]
+authors = ["David Feng"]
+language = "zh-CN"
+multilingual = false
+src = "./"
+title = "西风的笔记"
+
+[output.html.fold]
+enable = true
+level = 1
+
+[rust]
+edition = "2021"
