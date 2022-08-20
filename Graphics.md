@@ -1,5 +1,17 @@
 # 图形学相关知识点
 
+## 简单图形图像处理
+
+### Dither (抖动)
+
+使用黑白空间表示的灰度图
+
+![dither](https://upload.wikimedia.org/wikipedia/commons/c/c1/Michelangelo%27s_David_-_Floyd-Steinberg.png)
+
+使用红色和蓝色表示的紫色
+
+![色彩](https://upload.wikimedia.org/wikipedia/commons/6/69/Dithering_example_red_blue.svg)
+
 ## 色彩模型
 
 RGB和CMYK颜色模型都是依赖于设备色彩空间的相对模型. 两者之间没用通用或简单的转换公式.
