@@ -1,6 +1,27 @@
 # 图形学相关知识点
 
-## Inkscape SVG CSS 学习笔记
+## 色彩模型
+
+RGB和CMYK颜色模型都是依赖于设备色彩空间的相对模型. 两者之间没用通用或简单的转换公式.
+
+转换需要使用色彩管理系统完成.
+
+HSL/HSV
+
+Hue: 0-360 圆, 色调; Saturation: 饱和度, 0-100% 范围; Lightness: 亮度: 0-100% 范围;
+Value: 0-100%范围.
+
+两者的区别: Value 100%时是纯色
+
+![HSV](https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/HSV_color_solid_cone_chroma_gray.png/320px-HSV_color_solid_cone_chroma_gray.png)
+
+Lightness 100%时是白色.
+
+![HSV](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/HSL_color_solid_dblcone_chroma_gray.png/320px-HSL_color_solid_dblcone_chroma_gray.png)
+
+https://colorjs.io/apps/picker/hsv
+
+## Inkscape SVG CSS 学习笔记 - 长度单位
 
 原来在css规范中,px 是绝对大小的单位, 1px等于 1/96英寸.
 
