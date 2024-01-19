@@ -12,6 +12,8 @@
 - [系统](./OS.md)
   - [Linux](./Linux.md)
   - [Windows](./Windows.md)
+- [软件](./toolkit/index.md)
+  - [常用软件](./toolkit/softwares.md)
 - [图形学入门](./Graphics.md)
 - [其他](./Others.md)
   - [阅读](./Books.md)
