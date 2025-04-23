@@ -1,5 +1,3 @@
-# wiki
+# 笔记
 
-online browser, see [here][wiki_url]
-
-[wiki_url]: https://github.com/DavidFeng/lovely_codes/wiki
+尝试使用[Today I Learned](https://github.com/michenriksen/hugo-theme-til)。
